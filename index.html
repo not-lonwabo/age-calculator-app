@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="main">
+      <div>
+        <div class="row">
+          <div class="day">
+            <p class="label-text">DAY</p>
+            <input class="input-box" type="text" placeholder="DD" min="1" max="31" maxlength="2">
+            <p class="error-text">This field is required</p>
+          </div>
+          <div class="month">
+            <p class="label-text">MONTH</p>
+            <input class="input-box" type="text" placeholder="MM" min="1" max="12" maxlength="2">
+            <p class="error-text">This field is required</p>
+          </div>
+          <div class="year">
+            <p class="label-text">YEAR</p>
+            <input class="input-box" type="text" placeholder="YYYY" min="1900" maxlength="4">
+            <p class="error-text">This field is required</p>
+          </div>
+        </div>
+      </div>
+      <div class="divider">
+        <div class="btn">
+          <a href="#">
+            <img src="./assets/images/icon-arrow.svg" alt="Arrow image">
+          </a>
+        </div>
+      </div>
+      <div class="output">
+        <span class="row result">
+          <p class="dashes">- -</p>
+          <p class="denomination">years</p>
+        </span>
+        <span class="row result">
+          <p class="dashes">- -</p>
+          <p class="denomination">months</p>
+        </span>
+        <span class="row result">
+          <p class="dashes">- -</p>
+          <p class="denomination">days</p>
+        </span>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="index.js"></script>
+</body>
+</html>
